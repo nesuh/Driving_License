@@ -1,0 +1,232 @@
+ *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+} 
+:root{
+    --frist_color:#D2DAD8;
+    --second_color:#00c898;
+    --third_color:rgb(0, 0, 0);
+    --emargancy_collor:rgb(255, 6, 6);
+}
+a{
+  color: var(--second_color);
+}
+body {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: var(--frist_color);
+  }
+  .Admin_header_container {
+    background-color: var(--second_color);
+    color: var(--third_color);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .image_container {
+    display: flex;
+    align-items: center;
+  }
+  #logo {
+    width: 50px;
+    height: auto;
+  }
+  .nav_container ul {
+    list-style: none;
+    display: flex;
+  }
+  .nav_container ul li {
+    margin-right: 10px;
+    padding:1rem;
+  }
+  
+  .nav_container ul li a {
+    color: var(--third_color);
+    text-decoration: none;
+  }
+  
+  .nav_container ul li:hover {
+    background-color: var(--third_color);
+    border-radius: .3rem;
+    color: var(--second_color);
+    
+  }
+  .nav_container ul li a:hover{
+    color: var(--second_color);
+    background: #D2DAD8;
+    border: #000 2px solid;
+  }
+  
+  .account_container {
+    width: 400px;
+    margin: 50px auto;
+    background-color: var(--frist_color);
+    padding: 20px;
+    border-radius: 5px;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+  }
+  
+  .error_container {
+    position: absolute;
+    margin-bottom: 10px;
+    top: 10rem;
+    left: 20rem;
+    color: red;
+    background-color: var(--second_color);
+    border-radius: 1rem;
+    padding: 7rem 8rem;
+    animation-name: slideDown;
+  animation-duration: 0.5s;
+  display:none;
+  max-width: 50%;
+  max-height: 30%;
+  }
+  #errorcancel{
+    position: relative;
+    color: red;
+    padding: 0.5rem 3rem;
+    text-align: center;
+    background-color: var(--frist_color);
+    color: var(--third_color);
+    margin: auto;
+  }
+  #errorcancel:hover{
+    opacity: 0.6;
+  }
+  .username_container,
+  .userpassword_container,
+  .usertype_container,
+  .userstatus_container,
+  .userregister_container {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid var(--third_color);
+    border-radius: 10px;
+
+  }
+  .combo{
+    width: 50%;
+    padding: 10px;
+    border: 1px solid var(--third_color);
+    border-radius: 10px; 
+  }
+  
+  input[type="submit"] {
+    width: 50%;
+    padding: 10px;
+    background-color: var(--second_color);
+    color: var(--third_color);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    /* ///////// */
+    margin-left: 24%;
+    position: relative;
+    margin-top: 45px;
+    padding: 15px;
+    width: 8rem;
+    border-radius: 15px;
+    background:var(--second_color);
+    color:black; 
+    border: solid 2px var(--third_color);
+  }
+  
+  input[type="submit"]:hover {
+  background:var(--frist_color) ;
+  color:black;
+  
+  }
+  .update_button_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12rem;
+  }
+  .viewusers_button_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12rem;
+  }
+  .update_button{
+    background-color: var(--second_color);
+    padding: 1rem 8rem;
+    color: var(--third_color);
+    font-size: large;
+    width: 30%;
+  }
+  
+  .table_container{
+    position: absolute;
+    left: 3rem;
+    top: 6rem;
+  } 
+  #viewcancel{
+    background-color: var(--emargancy_collor);
+    margin: auto;
+    padding: 5px .3rem;
+    color: var(--second_color);
+    margin-top: 7px;
+    font-size: large;
+  
+  }
+  .status_button_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12rem;
+  }
+  /* .error_pupup{
+    color: red;
+    font-size: large;
+    border-radius: 1rem;
+    background-color: var(--second_color);
+    position: absolute;
+  } */
+
+  table td button{
+    background-color: var(--second_color);
+    padding: 5px 3rem;
+    border:none;
+    border-radius:.4rem;
+    margin-left:1.4rem;
+  }
+  table td button a{
+    text-decoration:none;
+    font-size:large;
+    color: var(--third_color);
+  }
+  #table_buttons{
+    background-color: var(--emargancy_collor);
+    color: var(--second_color);
+  }
+  button:hover{
+    opacity:0.7;
+  }
+  @keyframes slideDown {
+    from {
+      transform: translate(-15%, -50%) scale(0,0);
+      top: 0;
+      
+    }
+    to {
+      transform: translate(-15%,8%) scale(1,1);
+    }
+  }
